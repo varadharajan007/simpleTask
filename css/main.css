@@ -95,6 +95,7 @@ div.carousel-inner{
 div.carousel-caption
 {
 	top: 100%;
+	right: 17%;
 }
 
 div.carousel-inner .item h2{
@@ -112,9 +113,35 @@ div.carousel-inner .item h2{
 }
 
 
+/* ==========================================================================
+   responsive style
+   ========================================================================== */
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+}
 
+@media only screen and (max-width: 375px) {
+    /* phones */
+		blockquote{
+		  margin-top: 25%;
+		  font-size: 15px;
+		}
 
+		blockquote::before{
+		  bottom: 21%;
+    	  left: 5%;
+    	  font-size: 40px;
+		}
 
+		.header,footer p{
+		  margin:0rem 2rem;
+		}
+
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+}
 
 
 
