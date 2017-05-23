@@ -49,7 +49,7 @@
                 <address>
                     <i class="glyphicon glyphicon-user"></i> &nbsp; Varadharajan PR,<br>
                     <i class="glyphicon glyphicon-phone"></i> &nbsp; 9019994396 <br>
-                   <i class="glyphicon glyphicon-envelope"></i> &nbsp; vardhan.rajan.6@gmail.com 
+                    <i class="glyphicon glyphicon-envelope"></i> &nbsp; vardhan.rajan.6@gmail.com 
                 </address>
             </div>
         </div><!--/.navbar-collapse -->
@@ -65,24 +65,24 @@
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
+          </ol> 
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active text-center" v-for="(itemObjKey, catalog) in items" v-if="catalog == 0">
-              <h2 v-bind:style="{'color':itemObjKey.color}">
-                  "" {{itemObjKey.text}} ""
+              <h2 :style="{ color: itemObjKey.colors}">
+                      <blockquote>{{itemObjKey.text}}</blockquote>
               </h2>
               <div class="carousel-caption">
                 <span class="text-right">
-                <<p>- {{itemObjKey.author}}</p></span>
+                      <p>- {{itemObjKey.author}}</p></span>
                 <img  :src="itemObjKey.images" width="50" height="50">
               </div>
             </div>
 
             <div class="item text-center" v-for="(itemObjKey, catalog) in items" v-if="catalog > 0">
-              <h2 v-bind:style="{'color': '+itemObjKey.color+'}">
-                {{itemObjKey.text}}
+              <h2 :style="{ color: itemObjKey.colors}">
+                    <blockquote>{{itemObjKey.text}}</blockquote>
               </h2>
               <div class="carousel-caption">
                  <span>
